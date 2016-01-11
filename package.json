@@ -1,0 +1,26 @@
+{
+  "name": "@hnordt/reax-request",
+  "version": "1.0.0",
+  "description": "Request module for React",
+  "homepage": "https://hnordt.github.io/reax-request",
+  "bugs": {
+    "url": "https://github.com/hnordt/reax-request/issues"
+  },
+  "license": "MIT",
+  "author": "Héliton Nordt <hnordt@hnordt.com> (https://github.com/hnordt)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hnordt/reax-request.git"
+  },
+  "scripts": {
+    "prepublish": "./node_modules/.bin/babel --presets es2015 index.babel.js -o index.js"
+  },
+  "dependencies": {
+    "promise": "^7.1.1",
+    "superagent": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
