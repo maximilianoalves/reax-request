@@ -1,6 +1,6 @@
 {
   "name": "@hnordt/reax-request",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Request module for React",
   "homepage": "https://hnordt.github.io/reax-request",
   "bugs": {
