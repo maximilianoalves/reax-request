@@ -13,7 +13,11 @@ npm install --save @hnordt/reax-request
 ```jsx
 import request from '@hnordt/reax-request';
 
-request('GET', 'http://foo.com', { bar: true })
+request({
+  method: 'GET',
+  url: 'http://foo.com',
+  query: { bar: true }
+})
   .then(data => console.info(data))
   .catch(error => console.error(error));
 ```
