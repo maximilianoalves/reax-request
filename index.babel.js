@@ -16,7 +16,7 @@ const request = params => {
       .set(headers)
       .end((error, response) => {
         if (error) {
-          reject(error.response ? error.response.body : error)
+          reject(error.response ? (error.response.body || error.response) : error)
         } else {
           resolve(response.body)
         }
